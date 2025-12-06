@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1E1B4B"/>
+      <stop offset="100%" style="stop-color:#312E81"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8B5CF6"/>
+      <stop offset="100%" style="stop-color:#6366F1"/>
+    </linearGradient>
+    <linearGradient id="card2Grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#A78BFA"/>
+      <stop offset="100%" style="stop-color:#818CF8"/>
+    </linearGradient>
+    <linearGradient id="card3Grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#C4B5FD"/>
+      <stop offset="100%" style="stop-color:#A5B4FC"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1024" height="1024" rx="180" fill="url(#bgGrad)"/>
+  
+  <!-- Back card (lightest) -->
+  <rect x="280" y="180" width="520" height="380" rx="32" fill="url(#card3Grad)" opacity="0.6" transform="rotate(-8 540 370)"/>
+  
+  <!-- Middle card -->
+  <rect x="260" y="220" width="520" height="380" rx="32" fill="url(#card2Grad)" opacity="0.8" transform="rotate(-4 520 410)"/>
+  
+  <!-- Front card (darkest/main) -->
+  <rect x="240" y="260" width="520" height="380" rx="32" fill="url(#cardGrad)"/>
+  
+  <!-- Lines on front card (representing text/prompts) -->
+  <rect x="300" y="340" width="280" height="24" rx="12" fill="white" opacity="0.9"/>
+  <rect x="300" y="390" width="400" height="20" rx="10" fill="white" opacity="0.5"/>
+  <rect x="300" y="430" width="340" height="20" rx="10" fill="white" opacity="0.5"/>
+  <rect x="300" y="470" width="380" height="20" rx="10" fill="white" opacity="0.5"/>
+  
+  <!-- Prompt cursor/chevron indicator -->
+  <path d="M680 340 L720 360 L680 380" stroke="white" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.9"/>
+  
+  <!-- Bottom deck indicator dots -->
+  <circle cx="460" cy="720" r="16" fill="white" opacity="0.8"/>
+  <circle cx="512" cy="720" r="16" fill="white" opacity="0.5"/>
+  <circle cx="564" cy="720" r="16" fill="white" opacity="0.3"/>
+</svg>
