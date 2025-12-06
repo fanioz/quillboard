@@ -47,3 +47,6 @@ Thumbs.db
 
 # Debug
 *.pdb
+
+# Kilocode
+.kilocode/
